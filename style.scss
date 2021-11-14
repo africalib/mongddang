@@ -1,0 +1,138 @@
+$colorPoint: #fbba00;
+
+.app {
+    text-align: center;
+    font-size: 18px;
+
+    img{
+        max-width: 100%;
+    }
+
+    .color-point {
+        color: $colorPoint;
+    }
+
+    .color-ea9800 {
+        color: #ea9800;
+    }
+
+    .btn-point {
+        background: $colorPoint;
+        color: #000;
+        border-radius: 35px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 30px;
+
+        &.rect {
+            border-radius: 4px;
+            padding: 15px 90px;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        line-height: 1.5;
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 120px 0;
+    }
+
+    .text {
+        padding: 100px 0;
+
+        h2 {
+            padding-bottom: 50px;
+        }
+    }
+
+    .status {
+        padding: 100px 0;
+        background-image: url(img/vegetables.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sns {
+        padding: 100px 0;
+        background: #fff6dc;
+
+        h4 {
+            margin-bottom: 50px;
+        }
+
+        .part {
+            padding-top: 50px;
+
+            button.number {
+                padding: 0;
+                width: 56px;
+                height: 56px;
+                line-height: 56px;
+                border: 0;
+                border-radius: 50%;
+                font-size: 20px;
+            }
+
+            .desc {
+                font-size: 24px;
+                padding: 35px 0;
+            }
+
+            &.last {
+                font-size: 24px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .community {
+        padding: 100px 0;
+
+        .part {
+            padding-bottom: 125px;
+
+            h5 {
+                padding-bottom: 50px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                max-width: 700px;
+                margin: 0 auto;
+                text-align: left;
+                font-size: 20px;
+
+                li{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .intro {
+        padding-bottom: 100px;
+    }
+
+    footer {
+        background: #ededed;
+        padding: 100px 0 50px 0;
+
+        .links {
+            padding-top: 50px;
+
+            a {
+                display: inline-block;
+                padding: 0 10px;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}

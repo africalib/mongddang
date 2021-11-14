@@ -1,0 +1,137 @@
+.app {
+  text-align: center;
+  font-size: 18px;
+}
+
+.app img {
+  max-width: 100%;
+}
+
+.app .color-point {
+  color: #fbba00;
+}
+
+.app .color-ea9800 {
+  color: #ea9800;
+}
+
+.app .btn-point {
+  background: #fbba00;
+  color: #000;
+  border-radius: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+
+.app .btn-point.rect {
+  border-radius: 4px;
+  padding: 15px 90px;
+}
+
+.app h1, .app h2, .app h3, .app h4, .app h5, .app h6 {
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.app header {
+  padding: 120px 0;
+}
+
+.app .text {
+  padding: 100px 0;
+}
+
+.app .text h2 {
+  padding-bottom: 50px;
+}
+
+.app .status {
+  padding: 100px 0;
+  background-image: url(img/vegetables.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.app .sns {
+  padding: 100px 0;
+  background: #fff6dc;
+}
+
+.app .sns h4 {
+  margin-bottom: 50px;
+}
+
+.app .sns .part {
+  padding-top: 50px;
+}
+
+.app .sns .part button.number {
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  border: 0;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.app .sns .part .desc {
+  font-size: 24px;
+  padding: 35px 0;
+}
+
+.app .sns .part.last {
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+
+.app .community {
+  padding: 100px 0;
+}
+
+.app .community .part {
+  padding-bottom: 125px;
+}
+
+.app .community .part h5 {
+  padding-bottom: 50px;
+}
+
+.app .community .part ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+.app .community .part ul li {
+  margin-top: 10px;
+}
+
+.app .intro {
+  padding-bottom: 100px;
+}
+
+.app footer {
+  background: #ededed;
+  padding: 100px 0 50px 0;
+}
+
+.app footer .links {
+  padding-top: 50px;
+}
+
+.app footer .links a {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.app footer .links a img {
+  width: 80px;
+  height: 80px;
+}
+/*# sourceMappingURL=style.css.map */
