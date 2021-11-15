@@ -1,6 +1,10 @@
+html {
+  font-size: 16px;
+}
+
 .app {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .app img {
@@ -19,28 +23,39 @@
   background: #fbba00;
   color: #000;
   border-radius: 35px;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 15px 40px;
+  line-height: 41.6px;
 }
 
 .app .btn-point.rect {
   border-radius: 4px;
-  padding: 15px 90px;
+  padding: 23px 78px 23px 78px;
+  height: 92px;
+  max-width: 411px;
+  width: 100%;
 }
 
 .app h1, .app h2, .app h3, .app h4, .app h5, .app h6 {
-  font-weight: bold;
-  line-height: 1.5;
-  font-size: 2rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+  font-size: 3rem;
 }
 
 .app header {
-  padding: 120px 0;
+  padding: 7.5rem 0;
+}
+
+.app header h1 {
+  font-size: 2.375rem;
+  margin-bottom: 15px;
+  font-weight: normal;
 }
 
 .app .text {
-  padding: 100px 0;
+  padding: 6.25rem 0;
+  font-size: 2rem;
 }
 
 .app .text h2 {
@@ -48,64 +63,64 @@
 }
 
 .app .status {
-  padding: 100px 0;
+  padding: 7.5rem 0;
   background-image: url(img/vegetables.png);
   background-size: cover;
   background-position: center;
 }
 
 .app .sns {
-  padding: 100px 0;
+  padding: 7.5rem 0.9375rem;
   background: #fff6dc;
 }
 
 .app .sns h4 {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .app .sns .part {
-  padding-top: 50px;
+  padding-top: 5.625rem;
 }
 
 .app .sns .part button.number {
   padding: 0;
   width: 56px;
   height: 56px;
-  line-height: 56px;
+  line-height: 50px;
   border: 0;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 2.5rem;
 }
 
 .app .sns .part .desc {
-  font-size: 24px;
-  padding: 35px 0;
+  font-size: 2rem;
+  padding: 2.625rem 0;
 }
 
 .app .sns .part.last {
-  font-size: 24px;
-  padding-bottom: 50px;
+  font-size: 2rem;
+  padding-bottom: 3.125rem;
 }
 
 .app .community {
-  padding: 100px 0;
+  padding: 1rem 0 0 0;
 }
 
 .app .community .part {
-  padding-bottom: 125px;
+  padding-bottom: 9.375rem;
 }
 
 .app .community .part h5 {
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .app .community .part ul {
   list-style: none;
   padding: 0;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: left;
-  font-size: 20px;
+  font-size: 1.875rem;
 }
 
 .app .community .part ul li {
@@ -113,12 +128,15 @@
 }
 
 .app .intro {
-  padding-bottom: 100px;
+  padding-bottom: 11.25rem;
+  font-size: 2rem;
+  line-height: 3.10375rem;
 }
 
 .app footer {
   background: #ededed;
-  padding: 100px 0 50px 0;
+  padding: 6.25rem 0;
+  font-size: 1.4375rem;
 }
 
 .app footer .links {
@@ -133,5 +151,11 @@
 .app footer .links a img {
   width: 80px;
   height: 80px;
+}
+
+@media (max-width: 1199px) {
+  html {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

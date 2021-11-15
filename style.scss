@@ -1,10 +1,14 @@
 $colorPoint: #fbba00;
 
+html {
+    font-size: 16px;
+}
+
 .app {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem; // 18px
 
-    img{
+    img {
         max-width: 100%;
     }
 
@@ -20,28 +24,40 @@ $colorPoint: #fbba00;
         background: $colorPoint;
         color: #000;
         border-radius: 35px;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 15px 30px;
+        font-size: 2rem; // 32px
+        font-weight: 700;
+        padding: 15px 40px;
+        line-height: 41.6px;
 
         &.rect {
             border-radius: 4px;
-            padding: 15px 90px;
+            padding: 23px 78px 23px 78px;
+            height: 92px;
+            max-width: 411px;
+            width: 100%;
         }
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
-        line-height: 1.5;
-        font-size: 2rem;
+        font-weight: 700;
+        line-height: 4.2rem; // 67.2px;
+        font-size: 3rem; // 48px
+   
     }
 
     header {
-        padding: 120px 0;
+        padding: 7.5rem 0; // 120px 0;
+
+        h1 {
+            font-size: 2.375rem;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
     }
 
     .text {
-        padding: 100px 0;
+        padding: 6.25rem 0; // 100px 0;
+        font-size: 2rem; // 32px
 
         h2 {
             padding-bottom: 50px;
@@ -49,64 +65,68 @@ $colorPoint: #fbba00;
     }
 
     .status {
-        padding: 100px 0;
+        padding: 7.5rem 0; // 120px 0;
         background-image: url(img/vegetables.png);
         background-size: cover;
         background-position: center;
     }
 
     .sns {
-        padding: 100px 0;
+        padding: 7.5rem 0.9375rem; // 120px 15px
         background: #fff6dc;
 
         h4 {
-            margin-bottom: 50px;
+            margin-bottom: 3.125rem; // 50px
+       
         }
 
         .part {
-            padding-top: 50px;
+            padding-top: 5.625rem; // 90px
 
             button.number {
                 padding: 0;
                 width: 56px;
                 height: 56px;
-                line-height: 56px;
+                line-height: 50px;
                 border: 0;
                 border-radius: 50%;
-                font-size: 20px;
+                font-size: 2.5rem;
             }
 
             .desc {
-                font-size: 24px;
-                padding: 35px 0;
+                font-size: 2rem; // 32px
+                padding: 2.625rem 0; // 42px 0
+           
             }
 
             &.last {
-                font-size: 24px;
-                padding-bottom: 50px;
+                font-size: 2rem; // 32px
+                padding-bottom: 3.125rem; // 50px
+           
             }
         }
     }
 
     .community {
-        padding: 100px 0;
+        padding: 1rem 0 0 0; // 160px 0 0 0;
 
         .part {
-            padding-bottom: 125px;
+            padding-bottom: 9.375rem; // 150px
 
             h5 {
-                padding-bottom: 50px;
+                padding-bottom: 3.125rem; // 50px
+           
             }
 
             ul {
                 list-style: none;
                 padding: 0;
-                max-width: 700px;
+                max-width: 1000px;
                 margin: 0 auto;
                 text-align: left;
-                font-size: 20px;
+                font-size: 1.875rem;
 
-                li{
+                li {
                     margin-top: 10px;
                 }
             }
@@ -114,12 +134,16 @@ $colorPoint: #fbba00;
     }
 
     .intro {
-        padding-bottom: 100px;
+        padding-bottom: 11.25rem; // 180px
+        font-size: 2rem; // 32px
+        line-height: 3.10375rem; // 49.66px
+   
     }
 
     footer {
         background: #ededed;
-        padding: 100px 0 50px 0;
+        padding: 6.25rem 0; // 100px 0
+        font-size: 1.4375rem; // 23px
 
         .links {
             padding-top: 50px;
@@ -134,5 +158,11 @@ $colorPoint: #fbba00;
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1199px) {
+    html {
+        font-size: 8px;
     }
 }
