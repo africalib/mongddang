@@ -161,6 +161,7 @@ html {
                 text-align: left;
                 font-size: 2rem;
                 padding-left: 2rem;
+                padding-right: 0.9375rem;
 
                 li {
                     margin-top: 0.625rem;
@@ -176,10 +177,11 @@ html {
     }
 
     .intro {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
         padding-bottom: 11.25rem; // 180px
         font-size: 2rem; // 32px
         line-height: 3.10375rem; // 49.66px
-   
     }
 
     footer {

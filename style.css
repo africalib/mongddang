@@ -159,6 +159,7 @@ html {
   text-align: left;
   font-size: 2rem;
   padding-left: 2rem;
+  padding-right: 0.9375rem;
 }
 
 .app .community .part ul li {
@@ -172,6 +173,8 @@ html {
 }
 
 .app .intro {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
   padding-bottom: 11.25rem;
   font-size: 2rem;
   line-height: 3.10375rem;
