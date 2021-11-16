@@ -1,7 +1,7 @@
 $colorPoint: #fbba00;
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .app {
@@ -10,6 +10,11 @@ html {
 
     img {
         max-width: 100%;
+    }
+
+    .default {
+        cursor: default !important;
+        box-shadow: none !important;
     }
 
     .color-point {
@@ -23,17 +28,20 @@ html {
     .btn-point {
         background: $colorPoint;
         color: #000;
-        border-radius: 35px;
+        border-radius: 3rem;
         font-size: 2rem; // 32px
         font-weight: 700;
-        padding: 15px 40px;
-        line-height: 41.6px;
+        padding: 0;
+        height: 4.375rem;
+        line-height: calc(4.375rem - 2px);
+        width: 12.5rem;
 
         &.rect {
             border-radius: 4px;
-            padding: 23px 78px 23px 78px;
-            height: 92px;
-            max-width: 411px;
+            padding: 0 4.875rem;
+            height: 6.75rem;
+            line-height: calc(6.75rem - 2px);
+            max-width: 25.6875rem;
             width: 100%;
         }
     }
@@ -53,14 +61,27 @@ html {
             margin-bottom: 15px;
             font-weight: normal;
         }
+
+        img {
+            height: 5.875rem; // 94px
+       
+        }
+    }
+
+    .exchange {
+        background: #fff5de;
+
+        img {
+            max-height: 46.8125rem;
+        }
     }
 
     .text {
-        padding: 6.25rem 0; // 100px 0;
+        padding: 6.25rem 0.9375rem;
         font-size: 2rem; // 32px
 
         h2 {
-            padding-bottom: 50px;
+            padding-bottom: 3.125rem;
         }
     }
 
@@ -69,15 +90,22 @@ html {
         background-image: url(img/vegetables.png);
         background-size: cover;
         background-position: center;
+
+        h3 {
+            font-size: 3.5rem;
+
+            &:last-child {
+                margin-top: 6rem;
+            }
+        }
     }
 
     .sns {
-        padding: 7.5rem 0.9375rem; // 120px 15px
+        padding: 7.5rem 0;
         background: #fff6dc;
 
         h4 {
-            margin-bottom: 3.125rem; // 50px
-       
+            margin-bottom: 5rem;
         }
 
         .part {
@@ -85,18 +113,25 @@ html {
 
             button.number {
                 padding: 0;
-                width: 56px;
-                height: 56px;
-                line-height: 50px;
+                width: 3.5rem; // 56px
+                height: 3.5rem; // 56px
+                line-height: 3.125rem; // 50px
                 border: 0;
                 border-radius: 50%;
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .desc {
                 font-size: 2rem; // 32px
                 padding: 2.625rem 0; // 42px 0
-           
+
+                > .wrapper {
+                    padding: 0 0.625rem;
+                }
+
+                img {
+                    margin-top: 2.5rem;
+                }
             }
 
             &.last {
@@ -108,7 +143,7 @@ html {
     }
 
     .community {
-        padding: 1rem 0 0 0; // 160px 0 0 0;
+        padding: 10rem 0 0 0; // 160px 0 0 0;
 
         .part {
             padding-bottom: 9.375rem; // 150px
@@ -124,10 +159,17 @@ html {
                 max-width: 1000px;
                 margin: 0 auto;
                 text-align: left;
-                font-size: 1.875rem;
+                font-size: 2rem;
+                padding-left: 2rem;
 
                 li {
-                    margin-top: 10px;
+                    margin-top: 0.625rem;
+                    padding-left: 3rem; // 48px
+                    position: relative;
+                    background-image: url(./img/checkbox.svg);
+                    background-size: 1.875rem 1.875rem; // 30px 30px
+                    background-position: 0 0.5rem;
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -142,27 +184,44 @@ html {
 
     footer {
         background: #ededed;
+        border-top:1px solid #dedede;
         padding: 6.25rem 0; // 100px 0
-        font-size: 1.4375rem; // 23px
+        font-size: 2rem;
 
         .links {
-            padding-top: 50px;
+            padding-top: 3.125rem;
 
             a {
                 display: inline-block;
-                padding: 0 10px;
+                padding: 0 0.625rem;
 
                 img {
-                    width: 80px;
-                    height: 80px;
+                    width: 5rem;
+                    height: 5rem;
                 }
             }
         }
     }
 }
 
+@media (max-width: 1600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 1199px) {
     html {
         font-size: 8px;
+    }
+
+    .app {
+        .status {
+            background: #fff6dc;
+        }
+
+        .sns {
+            background: none;
+        }
     }
 }

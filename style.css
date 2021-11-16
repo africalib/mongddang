@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .app {
@@ -9,6 +9,12 @@ html {
 
 .app img {
   max-width: 100%;
+}
+
+.app .default {
+  cursor: default !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .app .color-point {
@@ -22,18 +28,21 @@ html {
 .app .btn-point {
   background: #fbba00;
   color: #000;
-  border-radius: 35px;
+  border-radius: 3rem;
   font-size: 2rem;
   font-weight: 700;
-  padding: 15px 40px;
-  line-height: 41.6px;
+  padding: 0;
+  height: 4.375rem;
+  line-height: calc(4.375rem - 2px);
+  width: 12.5rem;
 }
 
 .app .btn-point.rect {
   border-radius: 4px;
-  padding: 23px 78px 23px 78px;
-  height: 92px;
-  max-width: 411px;
+  padding: 0 4.875rem;
+  height: 6.75rem;
+  line-height: calc(6.75rem - 2px);
+  max-width: 25.6875rem;
   width: 100%;
 }
 
@@ -53,13 +62,25 @@ html {
   font-weight: normal;
 }
 
+.app header img {
+  height: 5.875rem;
+}
+
+.app .exchange {
+  background: #fff5de;
+}
+
+.app .exchange img {
+  max-height: 46.8125rem;
+}
+
 .app .text {
-  padding: 6.25rem 0;
+  padding: 6.25rem 0.9375rem;
   font-size: 2rem;
 }
 
 .app .text h2 {
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .app .status {
@@ -69,13 +90,21 @@ html {
   background-position: center;
 }
 
+.app .status h3 {
+  font-size: 3.5rem;
+}
+
+.app .status h3:last-child {
+  margin-top: 6rem;
+}
+
 .app .sns {
-  padding: 7.5rem 0.9375rem;
+  padding: 7.5rem 0;
   background: #fff6dc;
 }
 
 .app .sns h4 {
-  margin-bottom: 3.125rem;
+  margin-bottom: 5rem;
 }
 
 .app .sns .part {
@@ -84,17 +113,25 @@ html {
 
 .app .sns .part button.number {
   padding: 0;
-  width: 56px;
-  height: 56px;
-  line-height: 50px;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.125rem;
   border: 0;
   border-radius: 50%;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .app .sns .part .desc {
   font-size: 2rem;
   padding: 2.625rem 0;
+}
+
+.app .sns .part .desc > .wrapper {
+  padding: 0 0.625rem;
+}
+
+.app .sns .part .desc img {
+  margin-top: 2.5rem;
 }
 
 .app .sns .part.last {
@@ -103,7 +140,7 @@ html {
 }
 
 .app .community {
-  padding: 1rem 0 0 0;
+  padding: 10rem 0 0 0;
 }
 
 .app .community .part {
@@ -120,11 +157,18 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
-  font-size: 1.875rem;
+  font-size: 2rem;
+  padding-left: 2rem;
 }
 
 .app .community .part ul li {
-  margin-top: 10px;
+  margin-top: 0.625rem;
+  padding-left: 3rem;
+  position: relative;
+  background-image: url(./img/checkbox.svg);
+  background-size: 1.875rem 1.875rem;
+  background-position: 0 0.5rem;
+  background-repeat: no-repeat;
 }
 
 .app .intro {
@@ -135,27 +179,40 @@ html {
 
 .app footer {
   background: #ededed;
+  border-top: 1px solid #dedede;
   padding: 6.25rem 0;
-  font-size: 1.4375rem;
+  font-size: 2rem;
 }
 
 .app footer .links {
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 
 .app footer .links a {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 
 .app footer .links a img {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1199px) {
   html {
     font-size: 8px;
+  }
+  .app .status {
+    background: #fff6dc;
+  }
+  .app .sns {
+    background: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
