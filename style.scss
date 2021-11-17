@@ -129,8 +129,43 @@ html {
                     padding: 0 0.625rem;
                 }
 
-                img {
-                    margin-top: 2.5rem;
+                > .arrow {
+                    position: relative;
+                    padding-top: 1rem;
+
+                    img {
+                        position: absolute;
+                    }
+                }
+
+                > .img {
+                    padding: 2.5rem 3.125rem;
+
+                    img {
+                        max-width: 35.5rem;
+                    }
+                }
+            }
+
+            &.apple {
+                .desc > .arrow {
+                    img {
+                        top: -20px;
+                        left: 50%;
+                        margin-left: 20rem;
+                        width: 10.10375rem;
+                    }
+                }
+            }
+
+            &.onion {
+                .desc > .arrow {
+                    img {
+                        top: -20px;
+                        left: 50%;
+                        margin-left: -27rem;
+                        width: 4rem;
+                    }
                 }
             }
 
@@ -182,11 +217,12 @@ html {
         padding-bottom: 11.25rem; // 180px
         font-size: 2rem; // 32px
         line-height: 3.10375rem; // 49.66px
+   
     }
 
     footer {
         background: #ededed;
-        border-top:1px solid #dedede;
+        border-top: 1px solid #dedede;
         padding: 6.25rem 0; // 100px 0
         font-size: 2rem;
 

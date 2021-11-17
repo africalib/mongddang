@@ -130,8 +130,35 @@ html {
   padding: 0 0.625rem;
 }
 
-.app .sns .part .desc img {
-  margin-top: 2.5rem;
+.app .sns .part .desc > .arrow {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.app .sns .part .desc > .arrow img {
+  position: absolute;
+}
+
+.app .sns .part .desc > .img {
+  padding: 2.5rem 3.125rem;
+}
+
+.app .sns .part .desc > .img img {
+  max-width: 35.5rem;
+}
+
+.app .sns .part.apple .desc > .arrow img {
+  top: -20px;
+  left: 50%;
+  margin-left: 20rem;
+  width: 10.10375rem;
+}
+
+.app .sns .part.onion .desc > .arrow img {
+  top: -20px;
+  left: 50%;
+  margin-left: -27rem;
+  width: 4rem;
 }
 
 .app .sns .part.last {
