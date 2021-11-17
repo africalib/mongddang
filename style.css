@@ -68,10 +68,14 @@ html {
 
 .app .exchange {
   background: #fff5de;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .app .exchange img {
   max-height: 46.8125rem;
+  position: relative;
+  top: 1rem;
 }
 
 .app .text {
